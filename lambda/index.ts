@@ -59,11 +59,11 @@ const publishMessage = async (message: string) => {
   }
 
   try {
-    await fetch(`https://4gndr4ibozhrjh4f64qdudsyhu.appsync-api.ap-southeast-1.amazonaws.com/event`, {
+    await fetch(`<enter your appsync endpoint here>`, {
       method: "POST",
       headers: {
       "content-type": "application/json",
-      "x-api-key": "da2-wpiudi2aufhalbaw3r2fx632ie",
+      "x-api-key": "<enter your appsync api key here>",
     },
     body: JSON.stringify({
         channel: "default/bedrock-test",
